@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#top-section{
+    background-color: #202340;
+    height: 35px;
+    margin: 0px;
+}
+.section-heading{
+    text-align: center;
+}
+.anchor-link,.
+.anchor-link{
+    text-decoration: none;
+}
+.click_off,.anchor-link{
+    color: white;
+    margin-top: 5px;
+    margin-left: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+.logo{
+    width: 50%;
+    margin: 5px;
+}
+.nav1,.nav2{
+    display: flex;
+    margin: auto;
+}
+.logo_link,.input,.ad{
+    justify-content: space-between;
+    align-items: center;
+}
+.input{
+    margin-right: auto;
+}
+.ad{
+    margin-left: auto;
+    padding-right: 50px;
+}
+.category{
+    justify-content: flex-start;
+    align-self: flex-start;
+    font-family: 'Roboto',sans-serif;
+    font-size: 20px;
+}
+.category_link,.login_link,.orders_link,.cart_link{
+    text-decoration: none;
+    color: black;
+}
+.category_img{
+    margin-right: 5px;
+    width: 25%;
+}
+.login,.orders,.cart{
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: auto;
+}
+#navbar{
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
