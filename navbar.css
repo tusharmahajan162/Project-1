@@ -11,12 +11,12 @@
 }
 .section-heading{
     text-align: center;
+    padding: 10px;
 }
-.anchor-link,.
-.anchor-link{
+.anchor_link{
     text-decoration: none;
 }
-.click_off,.anchor-link{
+.click_off,.anchor_link{
     color: white;
     margin-top: 5px;
     margin-left: 5px;
@@ -35,34 +35,45 @@
     justify-content: space-between;
     align-items: center;
 }
-.input{
-    margin-right: auto;
+input{
+    margin: 5px;
+    width: 400px;
+    height: 25px;
 }
-.ad{
-    margin-left: auto;
-    padding-right: 50px;
+.search_img{
+    margin: 5px;
+    position: absolute;
 }
 .category{
+    margin-right: 250px;
+}
+.category + div,.category{
     justify-content: flex-start;
     align-self: flex-start;
     font-family: 'Roboto',sans-serif;
-    font-size: 20px;
+    font-size: 15px;
 }
-.category_link,.login_link,.orders_link,.cart_link{
+.c_link,.e_link,.b_link,.h_link,.s_link,.category_link,.login_link,.order_link,.cart_link{
     text-decoration: none;
     color: black;
 }
+.c_link,.e_link,.b_link,.h_link,.s_link{
+    justify-content: space-between;
+    margin-right: 10px;
+    margin-left: 0;
+}
 .category_img{
-    margin-right: 5px;
-    width: 25%;
+    width: 18%;
 }
 .login,.orders,.cart{
-    justify-content: flex-end;
-    align-items: flex-end;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
     margin: auto;
 }
 #navbar{
-    padding: 10px;
+    padding: 10px 20px 13px 20px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-
+.c_link:hover,.e_link:hover,.b_link:hover,.h_link:hover,.s_link:hover,.category_link:hover,.login_link:hover,.order_link:hover,.cart_link:hover{
+    color:blue;
+}
