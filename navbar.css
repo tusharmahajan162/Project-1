@@ -111,14 +111,15 @@ input::placeholder{
     margin-bottom: 100px;
 }
 .b_head{
-    margin: 10px 0px 25px 50px ;
+    margin: 10px 0px 25px 75px ;
     font-family: 'Roboto',sans-serif;
-    letter-spacing: 2px;
+    font-size: 32px;
+    letter-spacing: 10px;
 }
 .child{
     width: 350px;
     height: 450px;
-    margin: 50px auto 50px;
+    margin: 30px auto 50px;
     padding: 25px;
     border-radius: 25px;
     align-items: center;
@@ -158,9 +159,26 @@ p{
     background-color: red;
     border: 0px;
 }
+.bottom{
+    background-color: #202340;
+    height: 300px;
+    display: flex;
+}
+.bottom > div{
+    margin: auto;
+}
+.bottom_logo{
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+}
 @media screen and (max-width: 1145px) {
     .clothes,.ad{
         display: none;
+    }
+    input {
+        width: 100px;
     }
 }
 @media screen and (max-width: 1500px) {
