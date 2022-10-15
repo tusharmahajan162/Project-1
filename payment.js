@@ -1,4 +1,4 @@
-console.log("sdfsdf")
+
 
 document.querySelector("form").addEventListener("submit", getData)
 
@@ -23,6 +23,6 @@ function getData() {
         alert("Enter all the fields")
     } else {
         alert("Congrats !! Your order is placed .")
-        //window.location.href = './ind.html'
+        window.location.href = 'index.html'
     }
 }

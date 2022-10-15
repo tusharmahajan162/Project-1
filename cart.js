@@ -1,11 +1,11 @@
 
-  var cart = JSON.parse(localStorage.getItem("CartArray")) || [];
+var cart = JSON.parse(localStorage.getItem("CartArray")) || [];
 
-  populate(cart);
+populate(cart);
 
-  function populate(cart){
+function populate(cart) {
 
-    document.querySelector("#container2").innerHTML = "";
+  document.querySelector("#container2").innerHTML = "";
 
 
   cart.map(function (elem, i) {
@@ -56,12 +56,12 @@
     quantityCounter.setAttribute("class", "quantityInput");
     quantityCounter.value = 1;
 
-    quantDiv.append(quantity,quantityCounter);
+    quantDiv.append(quantity, quantityCounter);
 
     var remove = document.createElement("button");
     remove.setAttribute("class", "removeBtn");
     remove.textContent = "Remove Item";
-    remove.addEventListener("click", function(){
+    remove.addEventListener("click", function () {
       removeElement(i);
     })
 
@@ -73,20 +73,34 @@
     div1.append(image, cartItem, remove);
     document.querySelector("#container2").append(div1);
   });
-  }
+}
 
-  function removeElement(i){
-    cart.splice(i,1);
-    console.log(i)
-    populate(cart);
-    localStorage.setItem("CartArray", JSON.stringify(cart));
-    location.reload();
-  }
+function removeElement(i) {
+  cart.splice(i, 1);
+  console.log(i)
+  populate(cart);
+  localStorage.setItem("CartArray", JSON.stringify(cart));
+  location.reload();
+}
 
-  var total = cart.reduce(function (acc, cv) {
-    return Number((acc + Number(cv.price)).toFixed(2));
-  }, 0);
+var total = cart.reduce(function (acc, cv) {
+  return Number((acc + Number(cv.price)).toFixed(2));
+}, 0);
 
-  document.querySelector(
-    ".totalprice"
-  ).textContent = `Subtotal: $${total}`;
+document.querySelector(
+  ".totalprice"
+).textContent = `Subtotal: $${total}`;
+
+
+
+
+
+document.querySelector("form").addEventListener("submit", getData)
+
+function getData() {
+  event.preventDefault()
+
+
+  window.location.href = './payment.html'
+}
+
