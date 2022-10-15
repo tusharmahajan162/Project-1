@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cart</title>
-    <link rel="stylesheet" href="cart.css">
-    <link rel="stylesheet" href="navbar.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart</title>
+  <link rel="stylesheet" href="cart.css">
+  <link rel="stylesheet" href="navbar.css">
 
 </head>
 
@@ -23,10 +23,6 @@
                 <a class="search" href="#"><img class="search_img"
                         src="https://img.shop.com/Image/resources/images/icon-search-24px.svg" /></a>
             </div>
-            <div class="ad">
-                <a class="ad_link" href="#"><img class="ad_img"
-                        src="https://img.shop.com/Image/header2013/usa-shopping-annuity-biotin-gummies-head-banner1664295986848.png"></a>
-            </div>
         </nav>
         <nav class="nav2">
             <div class="clothes">
@@ -39,10 +35,13 @@
                 </ol>
             </div>
             <div class="login">
-                <a class="login_link" href="#"><img class="login_img"
-                        src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg" />
-                    <p class="login_w">SignUp/LogIn</p>
-                </a>
+                <img class="login_img"
+                    src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg" /><button
+                    class="login_w">SignUp/LogIn</button>
+                <div class="dropdown-content">
+                    <a href="signup.html">SignUp</a>
+                    <a href="login.html">LogIn</a>
+                </div>
             </div>
             <div class="orders">
                 <a class="order_link" href="#"><img class="orders_img"
@@ -51,41 +50,34 @@
                 </a>
             </div>
             <div class="cart">
-                <a class="cart_link" href="#"><img class="cart_img"
+                <a class="cart_link" href="cart.html"><img class="cart_img"
                         src="https://img.shop.com/Image/resources/images/icon-shopping-cart-24px.svg" />
-                    <a href="cart.html">
-                        <p class="cart_w"> Cart</p>
-                    </a>
+                    <p class="cart_w">Cart</p>
                 </a>
             </div>
         </nav>
     </header>
-    <div id="total">
-        <h2>Your Cart</h2>
+    <br><br>
+    <h2>Your Cart</h2>
+  <div id="total">
+  </div>
+  <div class="mainCart">
+    <div id="container2"></div>
+    <div class="orderTotal">
+      <div class="orderPrice">
+        <h2>Order Total</h2>
+      </div>
+      <hr>
+      <div class="totalprice">
+      </div>
+      <p style="text-align:center; padding: left 15px;margin:10px"><a href="navbar.html" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"> Continue Shoping</a></p>
+      <div class="shipping"><input type="text" placeholder="zipcode"><button class="estShippingBtn">Estimate Shipping</button></div>
+      <button class="checkoutBtn" onclick = "window.location.href = 'address.html'">Proceed To Checkout</button>
+      <button  class="checkoutBt">Paypal</button>
+      <button style="float:right; padding-right: 40px; margin-top: 20px; border: none;" > <img src="https://src.mastercard.com/assets/img/btn/src_chk_btn_147x034px.svg?locale=en_us&paymentmethod=master,visa,discover,amex&checkoutid=a4a6w4v6h7cg0iaijxn0j1iaoelnus5936" alt=""></button>
+     
     </div>
-    <div class="mainCart">
-        <div id="container2"></div>
-        <div class="orderTotal">
-            <div class="orderPrice">
-                <h2>Order Total</h2>
-            </div>
-            <hr>
-            <div class="totalprice">
-            </div>
-            <p style="text-align:right; margin:10px"><a href="http://" target="_blank" rel="noopener noreferrer">
-                    Continue Shoping</a></p>
-            <div class="shipping"><input type="text" placeholder="zipcode"><button class="estShippingBtn">Estimate
-                    Shipping</button></div>
-            <button class="checkoutBtn" onclick="window.location.href = 'address.html'">Proceed To Checkout</button>
-            <!-- <button class="checkoutBt">Paypal</button> -->
-            <form><input type="submit" class="checkoutBt" value="Continue" class="btn"></form>
-
-            <button style="float:right; padding-right: 40px; margin-top: 20px; border: none;"> <img
-                    src="https://src.mastercard.com/assets/img/btn/src_chk_btn_147x034px.svg?locale=en_us&paymentmethod=master,visa,discover,amex&checkoutid=a4a6w4v6h7cg0iaijxn0j1iaoelnus5936"
-                    alt=""></button>
-
-        </div>
-    </div>
+  </div>
 </body>
 
 </html>

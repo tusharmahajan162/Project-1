@@ -5,25 +5,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-#top-section{
-    background-color: #202340;
-    height: 35px;
-    margin: 0px;
-}
-.section-heading{
-    text-align: center;
-    padding: 10px;
-}
-.anchor_link{
-    text-decoration: none;
-}
-.click_off,.anchor_link{
-    color: white;
-    margin-top: 5px;
-    margin-left: 5px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-}
 .logo{
     width: 60%;
     margin: 5px;

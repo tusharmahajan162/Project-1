@@ -1,13 +1,4 @@
-#container2 {
-  width: 60%;
-  margin-right: 1%;
-  padding-left: 14px;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  justify-content: space-evenly;
-  gap: 16px;
-  padding-top: 2%;
-}
+
 
 #total {
   padding-top: 10px;
@@ -31,7 +22,8 @@
 
 .orderTotal {
   background-color: #f0f1f7;
-  width: 40%;
+  width: 60%;
+  margin:auto;
 }
 .orderTotal > * {
   padding: 0;
@@ -62,7 +54,7 @@
 .shipping{
   background-color: white;
   width: 50%;
-  justify-content: right;
+  justify-content: center;
   align-content: center;
   padding: 0px;
   margin-left: 45%;
@@ -133,7 +125,6 @@
 
 body {
   font-family: sans-serif;
-  margin-top: 3%;
 }
 
 .mainAddress{
